@@ -51,7 +51,7 @@ header a {
   text-align: center;
   color: #1d746b;
   border-radius: 6px;
-  background-image: url("../src/backround-al-quran\ \(1\).png");
+  background-image: url(/src/backround-al-quran\ \(1\).png);
   background-size: cover;
   background-position: 100px 300px;
 }
