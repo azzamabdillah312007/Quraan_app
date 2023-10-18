@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+}
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  flex-wrap: wrap;
+}
+header .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header i {
+  font-size: 30px;
+  color: #3ab6aa;
+}
+header h2 {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  color: #3ab6aa;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+}
+header li {
+  list-style: none;
+}
+header li:nth-child(3) {
+  background-color: #2f797d;
+  border-radius: 5px;
+}
+header a {
+  text-decoration: none;
+  color: #3ab6aa;
+  padding: 10px;
+}
+#opening {
+  margin: 30px;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #1d746b;
+  border-radius: 6px;
+  background-image: url("../src/backround-al-quran\ \(1\).png");
+  background-size: cover;
+  background-position: 100px 300px;
+}
+#opening h1 {
+  padding-bottom: 20px;
+  font-size: 35px;
+}
+#opening span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+#list {
+  display: none;
+}
+#surah {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.isisurah {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#surah .isi {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  width: 400px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: #185d61;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+#surah .baca a{
+  text-decoration: none;
+}
+
+/* halaman detail surah */
+
+#detailsurah {
+  height: max-content;
+}
+#detailsurah .judul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px ;
+  background-color: #2f797d;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#detailsurah span{
+  font-family: 'Montserrat', sans-serif;
+}
+#detailsurah .bismillah{
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#detailsurah .bismillah p{
+  font-size: 49px;
+}
+/* bagian arab */
+#detailsurah .arab {
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+  text-align: end;
+  padding-right: 20px;
+}
+#detailsurah .arab p {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 23px;
+}
+
+/* bagian indonesia */
+#detailsurah .indonesia {
+  display: flex;
+  margin-top: 20px;
+  background-color: #F5F7F8;
+}
+#detailsurah .indonesia p {
+  padding-left: 20px;
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  header i {
+    font-size: 20px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 15px;
+  }
+  #opening{
+    margin: 0;
+  }
+  #opening h1 {
+    font-size: 25px;
+  }
+  #opening span {
+    font-size: 17px;
+  }
+  #surah {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #detailsurah .indonesia p {
+    font-size: 15px;
+  }
+  #detailsurah .bismillah p{
+    font-size: 49px;
+  }
+}
