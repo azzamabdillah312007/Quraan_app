@@ -53,7 +53,7 @@ export default {
     <div class="isisurah">
       <div class="isi" v-for="(surah, index) in dataFetch" :key="index">
         <div class="name">
-          <p>{{ surah.namaLatin }}</p>
+          <p class="surah">{{ surah.namaLatin }}</p>
           <p>jumlah ayat : {{ surah.jumlahAyat }}</p>
         </div>
         <div class="baca">
@@ -77,5 +77,22 @@ export default {
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+
+section#opening{
+  background-image: url("./image/bg.png");
+}
+
+.surah{
+  font-weight: bolder;
+}
+
+.baca{
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(14, 197, 151);
+}
+.baca a{
+  color: white;
 }
 </style>
